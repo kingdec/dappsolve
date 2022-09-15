@@ -61,8 +61,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #7E8BB6;
-  background-color: #070E27;
+  color: #b6c3ee;
+  background-color: #1937a5;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -3529,14 +3529,14 @@ fieldset:disabled .btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #162044;
+  background-color: #2a3664;
   border-color: #162044;
 }
 
 .btn-secondary:hover {
   color: #fff;
-  background-color: #131b3a;
-  border-color: #121a36;
+  background-color: #1b2d71;
+  border-color: #1b2d71;
 }
 
 .btn-check:focus + .btn-secondary, .btn-secondary:focus {
