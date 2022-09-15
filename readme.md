@@ -1,0 +1,1 @@
+git init && git config user.name "david" && git config user.email "kingdave0080@gmail.com" && git config credential.${remote}.username kingdec && git config credential.helper store && git add . && git commit -m "first commit" && git branch -M main && git remote add origin https://github.com/kingdec/dappsolve.git && git push -u origin main
