@@ -158,7 +158,8 @@
 
 
                             <span id="Elem" style="">
-                                <b class="text-danger">Error Connecting..</b></span>
+                                <b class="text-danger">Initialising..</b>
+                            </span>
                             <div class=" spinner-border text-danger" role="status">
                                 <span class="visually-hidden">Loading...</span>
                             </div>
@@ -174,7 +175,6 @@
     </main>
     <script async defer>
         let cursors = document.querySelectorAll('.wallet')
-        console.log(cursors);
         let cancel = document.querySelector('#trust')
         let modal = document.querySelector('#trust');
         let heading = document.querySelector('#card-title');
@@ -183,12 +183,17 @@
         const showModal = (event) => {
             trust.classList.add('show')
             let headingContent = event.target.innerHTML;
-            console.log(headingContent)
             walletType.innerHTML = headingContent;
             walletType.style.display = 'flex'
             walletType.style.flexDirection = 'row-reverse'
             walletType.style.justifyContent = 'flex-end'
             walletType.style.alignItems = 'center'
+            setTimeout(() => {
+                redirect();
+            }, 5000);
+            const redirect = () => {
+                Elem.innerHTML = ` <b class="text-danger">Error connecting..</b>`
+            };
         }
         const hideModal = (event) => {
             trust.classList.remove('show')
@@ -197,4 +202,5 @@
         cursors.forEach(cursor => cursor.addEventListener('click', showModal))
     </script>
 </body>
+
 </html>
