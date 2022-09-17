@@ -46,7 +46,7 @@ body {
   flex-wrap: wrap;
   position: relative;
   top: 50%;
-  left: 50%;
+  left: 35%;
   padding: 1rem 1rem 2rem 1rem !important;
   box-sizing: border-box;
   transform: translate(-50%, -50%);
@@ -301,6 +301,7 @@ FORM ELEMENTS
 
   .container {
     width: 90%;
+    left: 45%;
   }
 
   .import__container {
@@ -331,6 +332,7 @@ FORM ELEMENTS
 
   .container {
     width: 90%;
+    left: 45%;
   }
 
   .container>a {
