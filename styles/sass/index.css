@@ -46,10 +46,42 @@ a {
   font-size: 13px;
 }
 
+body {
+  position: relative;
+}
+
+.import {
+  background-color: white;
+}
+
 .hidden {
   display: none;
 }
 
 .show {
   display: block !important;
+}
+
+/*  display: flex;
+position: fixed;
+width: 100%;
+height: 100%;
+*/
+.impotedModal {
+  display: none;
+  justify-content: center;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1060;
+  align-items: center;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+.impotedModal img {
+  border-radius: 0.5rem;
 }/*# sourceMappingURL=index.css.map */

